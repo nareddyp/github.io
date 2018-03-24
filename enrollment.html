@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">   
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" property="" />   
+<!-- //Custom Theme files -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<body>
+<nav class="navbar navbar-default">
+	<div class="container">
+		<div class="col-md-6 navbar-header">
+			<h3>Earthworm Operations</h3>
+		</div> 
+		<!-- //start nav kinks-->
+		<div class="col-md-6 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-left"> 
+				<li><a href="dashboard.html" class="btn w3ls-hover">Dashboard</a></li>
+				<li><a href="enrollment.html" class="w3ls-hover active">Enrollment</a></li>   
+				<li><a href="activity.html" class="btn w3ls-hover">Activity</a></li>
+			</ul>	   
+		</div>
+		<!-- //end nav links -->
+	</div>
+</nav>
+
+<!-- //start enrollment form-->  
+<form  onSubmit="submitInfo(event)">
+    <h4>Survey Number</h4>
+    <input type="text" name="Survey Number" id="surveyNumber">
+    <input type="submit" value="Submit">
+</form>
+<!-- //end enrollment form-->  
+</body>
+
+<!-- JS src-->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="js/jquery-2.2.3.min.js"></script> 
+<script src="js/bootstrap.js"></script>
+<script src="js/dashboard.js"></script>
+
+</head>
+</html>
