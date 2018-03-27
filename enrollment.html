@@ -27,12 +27,95 @@
 	</div>
 </nav>
 
-<!-- //start enrollment form-->  
-<form  onSubmit="submitInfo(event)">
-    <h4>Survey Number</h4>
-    <input type="text" name="Survey Number" id="surveyNumber">
-    <input type="submit" value="Submit">
-</form>
+<div class="agileits_mail_grids">
+ 	<div class="col-md-5 agileits_mail_grid_left">
+	    <form  onSubmit="submitInfo(event)">
+	          <h4>Farmer Enrollment Form</h4>
+	          <div>
+	            <h4>Farmer Name:*</h4>
+	          <input type="text" name="Name" placeholder="Name..." required="">
+	        </div>
+	        <div>
+	          <h4>Address:*</h4>
+	          <input type="text" name="address" placeholder="Address..." required="">
+	        </div>
+	        <div>
+	          <h4>Phone Number:*</h4>
+	          <input type="text" name="Phone" placeholder="Phone..." required="">
+	        </div>
+	         <div class="dropdown">
+	        	 <h4>Implements owned:</h4>
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+				    Choose one
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tractor</a></li>
+				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Transplanter</a></li>
+				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Harvester</a></li>
+				  </ul>
+			</div>
+	        <div class="dropdown">
+	        	 <h4>Services Needed:</h4>
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+				    Choose one
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Transplanter and Harvester</a></li>
+				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">E2E</a></li>
+				  </ul>
+			</div>
+			<div class="container">
+			  <h4>Plantation Datails:</h4>         
+			  <table class="table">
+			    <thead>
+			      <tr>
+			      	<th>Seed Type</th>
+			      	<th>Survey Number</th>
+			        <th>Land Size</th>
+			        <th>Soil Type</th>
+			        <th>Water Availability</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td><input type="text"></td>
+			        <td><input type="text"></td>
+			        <td><input type="text"></td>
+			        <td>
+					    <div class="dropdown">
+						  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+						    Choose one
+						    <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Regadi</a></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Chelka</a></li>
+						  </ul>
+						</div>	
+			        </td>
+			        <td>
+					    <div class="dropdown">
+						  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+						    Choose one
+						    <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Less</a></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Moderate</a></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Adequate</a></li>
+						  </ul>
+						</div>	
+			        </td>
+			      </tr>
+			    </tbody>
+			  </table>
+			</div>
+	        <input type="submit" value="Enroll">
+		</form>
+	</div>
+</div>
 <!-- //end enrollment form-->  
 </body>
 
